@@ -2,13 +2,6 @@ import { Link } from 'react-router-dom';
 
 import Carousel from "../components/Carousel";
 
-import Image1 from '../img/portfolio/1.png'
-import Image2 from '../img/carousel/2.jpg'
-import Image3 from '../img/carousel/3.jpg'
-import Image4 from '../img/portfolio/4.png'
-import Image5 from '../img/portfolio/5.png'
-import Image6 from '../img/portfolio/6.png'
-
 const Portfolio = () => {
 
   let slides = [
