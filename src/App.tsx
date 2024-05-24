@@ -5,8 +5,6 @@ import AnimRoutes from './components/AnimRoutes';
 
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import { motion } from 'framer-motion';
-
 function App() {
 
   return (

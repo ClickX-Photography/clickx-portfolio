@@ -1,13 +1,23 @@
 import { Link } from 'react-router-dom';
 
+import Carousel from "../components/Carousel";
+
 import Image1 from '../img/portfolio/1.png'
-import Image2 from '../img/portfolio/2.png'
-import Image3 from '../img/portfolio/3.png'
+import Image2 from '../img/carousel/2.jpg'
+import Image3 from '../img/carousel/3.jpg'
 import Image4 from '../img/portfolio/4.png'
 import Image5 from '../img/portfolio/5.png'
 import Image6 from '../img/portfolio/6.png'
 
 const Portfolio = () => {
+
+  let slides = [
+    "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
+    "https://wallpapercave.com/wp/wp3386769.jpg",
+    "https://wallpaperaccess.com/full/809523.jpg",
+    "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
+  ];
+
   return (
     <section className='section'>
       <div className='container mx-auto h-full relative'>
@@ -17,25 +27,9 @@ const Portfolio = () => {
             <p className='mb-12 max-w-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus commodi quia quo aliquid hic provident numquam qui, facere a velit nam ipsa assumenda, excepturi incidunt iusto, eligendi dolorum sit. Expedita.</p>
             <Link to={'/contact'} className='btn mb-[30px]'>CALL US NOW</Link>
           </div>
-          <div className='grid grid-cols-2 lg:gap-2 lg:pt-[20px]'>
-            <div className='max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-              <img className='object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500' src={Image1}></img>
-            </div>
-            <div className='max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-              <img className='object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500' src={Image2}></img>
-            </div>
-            <div className='max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-              <img className='object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500' src={Image3}></img>
-            </div>
-            <div className='max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-              <img className='object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500' src={Image4}></img>
-            </div>
-            <div className='max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-              <img className='object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500' src={Image5}></img>
-            </div>
-            <div className='max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-              <img className='object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500' src={Image6}></img>
-            </div>
+
+          <div>
+            <Carousel slides={slides} />
           </div>
         </div>
       </div>

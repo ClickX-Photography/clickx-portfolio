@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Socials from './Socials';
 import Logo from '../img/header/logo_1.png'
 import MobileNav from './MobileNav';
@@ -8,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <header className=' fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center'>
+        <header className='fixed w-screen p-4 px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[100px] flex items-center bg-white'>
             <div className='flex flex-col lg:flex-row lg:items-center w-full justify-between'>
                 {/* Logo */}
                 <Link to={'/'}>
