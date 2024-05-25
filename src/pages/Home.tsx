@@ -18,7 +18,7 @@ const Home = () => {
         <div className='flex flex-col justify-'>
           <div className='w-full pt-10 pb-14 lg:pt-0 lg:pb-0 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-center'>
             <h1 className='h1'>
-              ClickX Photography & Eternal Frames
+              ClickX Photography & Elegant Frames
             </h1>
             <p className='text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-12'>Based on Kurunegala, Avaialble Islandwide!</p>
             <Link to={'/contact'} className='btn mb-[30px]'>CALL US NOW!</Link>
