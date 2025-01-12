@@ -2,7 +2,7 @@ import WomanImage from '../img/contact/woman.png'
 
 const Contact = () => {
   return (
-    <section className='section'>
+    <section className='section overflow-y-auto pt-[100px]'>
       <div className='container mx-auto h-full'>
         <div className='flex flex-col lg:flex-row h-full items-center justify-start pt-36 gap-x-8 text-center lg:text-left '>
           <div className='lg:flex bg-[#264f58] absolute bottom-0 left-0 right-0 top72 -z-10'></div>

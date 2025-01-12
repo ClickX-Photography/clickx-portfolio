@@ -2,20 +2,15 @@ import { Link } from 'react-router-dom';
 
 import Carousel from "../components/Carousel";
 
-import Image1 from '../img/portfolio/1.png'
-import Image2 from '../img/carousel/2.jpg'
-import Image3 from '../img/carousel/3.jpg'
-import Image4 from '../img/portfolio/4.png'
-import Image5 from '../img/portfolio/5.png'
-import Image6 from '../img/portfolio/6.png'
-
 const Portfolio = () => {
 
   let slides = [
-    "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
-    "https://wallpapercave.com/wp/wp3386769.jpg",
-    "https://wallpaperaccess.com/full/809523.jpg",
-    "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
+    "src/img/portfolio/1.JPG",
+    "src/img/portfolio/2.JPG",
+    "src/img/portfolio/4.jpg",
+    "src/img/portfolio/7.jpg",
+    "src/img/portfolio/25.jpg",
+    "src/img/portfolio/26.jpg"
   ];
 
   return (
